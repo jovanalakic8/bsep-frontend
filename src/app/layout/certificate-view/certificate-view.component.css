@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  th,
+  td {
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 50px;
+  }
+  
+  .button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+  
+  
