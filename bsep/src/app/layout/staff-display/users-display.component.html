@@ -1,0 +1,19 @@
+<div class="card-container" *ngFor="let c of adminsAndEmployees">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-details">
+        <div>
+          <h1 class="card-title">{{ c.name }} {{ c.surname }}</h1>
+        </div>
+        <div class="card-number">
+          <div>Contact: {{ c.phone }}</div>
+          <span *ngIf="isAdmin(c)" class="admin-label">ADMIN</span>
+          <span *ngIf="!isAdmin(c)" class="employee-label">EMPLOYEE</span>
+        </div>
+      </div>
+      <span class="card-subtitle"
+        >{{ c.username }}, {{ c.address }}, {{ c.city }}, {{ c.country }}</span
+      >
+    </div>
+  </div>
+</div>
